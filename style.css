@@ -266,24 +266,3 @@ body {
     font-size: 16px;
   }
 }
-
-.news {
-    padding: 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
-}
-
-.news-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.news-list li {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-}
-
-.news-list li:last-child {
-    border-bottom: none;
-}
