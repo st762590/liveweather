@@ -1,0 +1,289 @@
+/* Global Styles */
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f7f7f7;
+  background-image: linear-gradient(to bottom, #f7f7f7, #e7e7e7);
+  transition: background-color 0.3s ease; /* Add transition effect to background color */
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease; /* Add transition effect to wrapper */
+}
+
+/* Header Styles */
+
+.header {
+  background-color: #0a67ca;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  animation: fadeIn 1s ease; /* Add animation to header title */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Inputs Styles */
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.inputs input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 300;
+  transition: border-color 0.3s ease;
+}
+
+.inputs input[type="text"]:focus {
+  border-color: #0a67ca;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: pulse 1s ease; /* Add animation to input field */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.inputs input[type="submit"] {
+  background-color: #0a67ca;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.inputs input[type="submit"]:hover {
+  background-color: #00698f;
+  animation: bounce 1s ease; /* Add animation to submit button */
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Weather Display Styles */
+
+.weather-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.weather-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #0a67ca;
+  animation: spin 2s ease; /* Add animation to weather icon */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.weather-temp {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.weather-desc {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.weather-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.weather-details li {
+  margin-bottom: 10px;
+}
+
+.weather-details li span {
+  font-weight: bold;
+  color: #333;
+}
+
+.weather-details li span::after {
+  content: ":";
+}
+
+/* JavaScript Animations */
+
+// Add animation to wrapper when
+
+/* Add this to your CSS file */
+
+/* Mobile-friendly styles */
+@media only screen and (max-width: 768px) {
+  /* Adjust the layout and styling for mobile devices */
+  body {
+    font-size: 16px;
+  }
+
+ .search {
+    width: 100%;
+    padding: 10px;
+  }
+
+ .search input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+ .search button {
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+ .weather {
+    padding: 20px;
+  }
+
+ .weather-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+ .temp {
+    font-size: 24px;
+  }
+
+ .city {
+    font-size: 18px;
+  }
+
+ .humidity,.pressure {
+    font-size: 16px;
+  }
+}
+
+.news {
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.news-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.news-list li:last-child {
+    border-bottom: none;
+}
